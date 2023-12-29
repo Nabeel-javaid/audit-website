@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
-  <title>Tonya </title>
+  <title>SecureHarbor audits </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,7 +56,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Tonya</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">SecureHarbor audits</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -100,8 +100,9 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
           data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <h1>Where Smart Contracts Meet Unrivaled Security</h1>
+          <h2>Decentralize with confidence. We expertly audit smart contracts for top-notch security, turning code into
+            robust shields against vulnerabilities</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
@@ -157,9 +158,16 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
+        <style> 
+          .section-title {
+            padding-top: 20px; /* Adjust the value as needed */
+          }
+        </style>
+        
         <div class="section-title">
           <h2>About Me</h2>
         </div>
+        
 
         <div class="row content">
           <div class="col-lg-12">
@@ -698,7 +706,9 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
+
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+              
                 data-bs-target="#faq-list-1">What is a Smart Contract Audit? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
@@ -810,7 +820,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/xdoqoord" method="post" role="form" class="php-email-form" id="contact-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -823,7 +833,9 @@
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <!-- <input type="text" class="form-control" name="subject" id="subject" required> -->
+                <textarea class="form-control" name="message" rows="1" required></textarea>
+
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
@@ -836,6 +848,11 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <script>
+              function clearForm() {
+                document.getElementById("contact-form").reset();
+              }
+            </script>
           </div>
 
         </div>
@@ -867,7 +884,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Tonya</h3>
+            <h3>SecureHarbor audits</h3>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -917,13 +934,13 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Tonya</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>SecureHarbor audits</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Tonya-free-bootstrap-html-template-corporate/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/SecureHarbor audits-free-bootstrap-html-template-corporate/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -940,7 +957,9 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="contact.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
