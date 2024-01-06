@@ -1441,7 +1441,7 @@ section {
   color: #6182ba;
 }
 
-.contact .info .email p {
+.contact .info .email .fa fa-telegram p {
   padding-top: 5px;
 }
 
@@ -1469,7 +1469,7 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i,
+.contact .info .email .fa fa-telegram:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #47b2e4;
@@ -1791,6 +1791,7 @@ section {
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 500px;
   color: #fff;
 }
 
