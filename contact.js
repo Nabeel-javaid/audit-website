@@ -28,7 +28,6 @@ function submitForm() {
          "Content-Type": "application/json"
       },
       body: JSON.stringify(formData)
-      console.log("Form ID:", formId); // This should print the form ID you are using
 
    })
    .then(response => {
