@@ -22,7 +22,7 @@ function submitForm() {
 
 
    // Send data to Formspree using Fetch API
-   fetch("https://formspree.io/f/xdoqoord", {
+   fetch("https://formspree.io/f/mvgooezd", {
       method: "POST",
       headers: {
          "Content-Type": "application/json"
