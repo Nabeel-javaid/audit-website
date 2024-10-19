@@ -12,45 +12,47 @@ function submitForm() {
       let message = messageElement.value;
 
 
-   // Prepare data for submission
-   let formData = {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message
-   };
+      // Prepare data for submission
+      let formData = {
+         name: name,
+         email: email,
+         subject: subject,
+         message: message
+      };
 
 
-   // Send data to Formspree using Fetch API
-   fetch("https://formspree.io/f/mvgooezd", {
-      method: "POST",
-      headers: {
-         "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
+      // Send data to Formspree using Fetch API
+      fetch("https://formspree.io/f/mvgooezd", {
+         method: "POST",
+         headers: {
+            "Content-Type": "application/json"
+         },
+         body: JSON.stringify(formData)
 
-   })
-   .then(response => {
-      if (!response.ok) {
-         throw new Error("Network response was not ok");
-      }
-      return response.json();
-   })
-   .then(data => {
-      // Handle success - you can update the UI as needed
-      console.log(data);
-      alert("Your message has been sent. Thank you!");
-      // Optionally, reset the form
-      document.getElementById("contact-form").reset();
-   })
-   .catch(error => {
-      // Handle error - you can update the UI as needed
-      console.error("There was a problem with the fetch operation:", error);
-      alert("There was an error sending your message. Please try again later.");
-   });
+      })
+         .then(response => {
+            if (!response.ok) {
+               throw new Error("Network response was not ok");
+            }
+            return response.json();
+         })
+         .then(data => {
+            // Handle success - you can update the UI as needed
+            console.log(data);
+            alert("Your message has been sent. Thank you!");
+            // Optionally, reset the form
+            document.getElementById("contact-form").reset();
+            console.log("Form ID:", formId); // This should print the form ID you are using
 
-}
-else {
-   console.error("One or more elements not found.");
-}
+         })
+         .catch(error => {
+            // Handle error - you can update the UI as needed
+            console.error("There was a problem with the fetch operation:", error);
+            alert("There was an error sending your message. Please try again later.");
+         });
+
+   }
+   else {
+      console.error("One or more elements not found.");
+   }
 }
